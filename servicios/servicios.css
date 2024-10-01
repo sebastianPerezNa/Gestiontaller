@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Sección de Servicios */
+.servicios-container {
+    padding: 40px;
+    background: linear-gradient(to right, #004080, #053546, #18021d); /* Degradado */
+    color: white;
+}
+
+.galeria-servicios {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+}
+
+.servicio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicio h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.servicio p {
+    padding: 0 15px;
+}
+
+.precio {
+    font-size: 20px;
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+/* Estilos generales para la sección de selección de vehículo */
+.auto-selection {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Color de fondo suave */
+    border: 1px solid #004080; /* Borde azul */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilos para el encabezado */
+.auto-selection h2 {
+    font-size: 32px;
+    color: #004080; /* Color azul */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.auto-selection p {
+    text-align: center;
+    color: #666; /* Color de texto gris */
+}
+
+/* Estilos para el formulario */
+.auto-selection .form-label {
+    font-weight: bold; /* Negrita para etiquetas */
+}
+
+.auto-selection .form-select {
+    padding: 12px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Borde gris */
+    transition: border-color 0.3s ease; /* Transición de color de borde */
+}
+
+/* Efecto al enfocar el campo */
+.auto-selection .form-select:focus {
+    border-color: #004080; /* Cambia a azul al enfocar */
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5); /* Sombra azul */
+}
+
+/* Estilos para el input de contacto */
+.auto-selection #info-input {
+    padding: 12px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Borde gris */
+}
+
+/* Efecto al enfocar el input */
+.auto-selection #info-input:focus {
+    border-color: #004080; /* Cambia a azul al enfocar */
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5); /* Sombra azul */
+}
+
+/* Ocultar por defecto el input de contacto */
+#contact-info {
+    display: none; /* Ocultarlo por defecto */
+}
+
+
+/* Botón de Cotización */
+.cotizacion {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-cotizacion {
+    padding: 10px 30px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cotizacion:hover {
+    background-color: #002d72;
+}

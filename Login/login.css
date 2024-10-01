@@ -1,0 +1,84 @@
+/* Fuente Moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Fondo del login */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('para.png') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos del formulario */
+.login-card {
+    background: #2C2C2C; /* Fondo oscuro con color gris oscuro */
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 15px; /* Bordes redondeados más pronunciados */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px; /* Tamaño del formulario más pequeño y centrado */
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 25px;
+    color: #FFA500; /* Color naranja para resaltar el título */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.login-card .input-group {
+    margin-bottom: 20px;
+    text-align: center; /* Centrar los campos de entrada */
+}
+
+.login-card label {
+    display: block;
+    font-size: 14px;
+    color: #DDDDDD;
+    margin-bottom: 5px;
+}
+
+.login-card input {
+    width: 90%; /* Reducir el ancho del input */
+    padding: 12px;
+    border: 1px solid #00BFFF; /* Borde más fino y moderno */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    background-color: #333333; /* Fondo de los inputs oscuro */
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra interna para un efecto más moderno */
+}
+
+.login-card button {
+    background-color: #FFA500; /* Color naranja para el botón */
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px; /* Bordes redondeados más sutiles */
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+    background-color: #e59400; /* Color naranja más oscuro al pasar el ratón */
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #00BFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}

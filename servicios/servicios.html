@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Taller de Parabrisas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="servicios.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-primary text-white text-center py-5 mb-5">
+    <div class="container">
+        <h1 class="display-4">Taller de Parabrisas - Servicios Profesionales</h1>
+        <p class="lead">Ofrecemos la mejor calidad en reparación y reemplazo de vidrios automotrices</p>
+    
+       
+    </div>
+</header>
+
+<!-- Sección de Servicios -->
+<section class="container mb-5" id="servicios">
+    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+    <p class="text-center text-muted mb-5">Descubre nuestros servicios especializados en reparación y reemplazo de vidrios automotrices. ¡Encuentra el que mejor se adapta a tus necesidades!</p>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card service-card h-100 shadow-sm">
+                <img src="ruta_a_imagen1.jpg" class="card-img-top" alt="Servicio 1">
+                <div class="card-body">
+                    <h5 class="card-title">Reemplazo de Parabrisas</h5>
+                    <p class="card-text">Ofrecemos un servicio completo de reemplazo de parabrisas utilizando los mejores materiales para garantizar la seguridad.</p>
+                    <p class="text-primary">$100.000</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card service-card h-100 shadow-sm">
+                <img src="ruta_a_imagen2.jpg" class="card-img-top" alt="Servicio 2">
+                <div class="card-body">
+                    <h5 class="card-title">Reparación de Luneta</h5>
+                    <p class="card-text">Reparamos tu luneta con técnicas modernas que aseguran durabilidad y estética impecable.</p>
+                    <p class="text-primary">$50.000</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                </div>
+            </div>
+        </div>
+        <!-- Añade más servicios según sea necesario -->
+    </div>
+</section>
+
+<!-- Sección de Selección de Autos -->
+<section class="container mb-5">
+    <h2 class="text-center mb-4">Selecciona tu Vehículo</h2>
+    <p class="text-center text-muted mb-5">Utiliza nuestro filtro para encontrar el vidrio perfecto para tu auto.</p>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form id="auto-form">
+                <div class="form-group">
+                    <label for="tipo-vehiculo">Tipo de Vehículo:</label>
+                    <select id="tipo-vehiculo" class="form-control">
+                        <option value="">Seleccionar Tipo</option>
+                        <option value="Auto">Auto</option>
+                        <option value="Camión">Camión</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="marca">Marca:</label>
+                    <select id="marca" class="form-control" disabled>
+                        <option value="">Seleccionar Marca</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modelo">Modelo:</label>
+                    <select id="modelo" class="form-control" disabled>
+                        <option value="">Seleccionar Modelo</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="tipo-vidrio" class="form-label">Tipo de Vidrio Afectado</label>
+                    <select id="tipo-vidrio" class="form-select" aria-label="Selecciona el tipo de vidrio">
+                        <option value="default">Selecciona un tipo de vidrio</option>
+                        <option value="parabrisas">Parabrisas</option>
+                        <option value="luneta">Luneta</option>
+                        <option value="ventana">Ventana</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="medio-comunicacion" class="form-label">Medio de Comunicación</label>
+                    <select id="medio-comunicacion" class="form-select" aria-label="Selecciona el medio de comunicación">
+                        <option value="default">Selecciona un medio</option>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="correo">Correo Electrónico</option>
+                    </select>
+                </div>
+                <div class="mb-3" id="contact-info" style="display: none;">
+                    <label for="info-input" class="form-label">Ingresa tu Número o Correo</label>
+                    <input type="text" id="info-input" class="form-control" placeholder="Número de teléfono o correo electrónico" required>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección de Cotización -->
+<section class="bg-light py-5" id="cotizacion">
+    <div class="container text-center">
+        <h2>Solicita una Cotización</h2>
+        <p class="text-muted">Indícanos qué servicio necesitas y te enviaremos una cotización personalizada.</p>
+        <button class="btn btn-primary btn-lg">Solicitar Cotización</button>
+    </div>
+</section>
+
+<!-- Pie de página -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Taller de Parabrisas. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="servicios.js"></script>
+</body>
+</html>

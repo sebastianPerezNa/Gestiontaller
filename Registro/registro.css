@@ -1,0 +1,152 @@
+/* Fuente Moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Fondo del registro */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('para2.jpg') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos del formulario de registro */
+.register-card {
+    background: #2C2C2C; /* Fondo oscuro */
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 700px; /* Tamaño del formulario más grande */
+    text-align: center;
+}
+
+.register-card h2 {
+    margin-bottom: 25px;
+    color: #FFA500; /* Color naranja para el título */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Diseño en rejilla para los campos del formulario */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 15px; /* Espacio reducido entre campos */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #DDDDDD;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: calc(100% - 16px); /* Ajusta el ancho para los bordes */
+    max-width: 300px; /* Ancho máximo de los campos de entrada */
+    padding: 8px; /* Menos padding */
+    border: 1px solid #00BFFF;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 14px; /* Fuente más pequeña */
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Centrar los campos de entrada */
+}
+
+.terms-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.terms-group input {
+    margin-right: 10px;
+}
+
+.terms-group label {
+    font-size: 14px;
+    color: #DDDDDD;
+}
+
+.terms-group a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+.terms-group a:hover {
+    text-decoration: underline;
+}
+
+.register-card button {
+    background-color: #FFA500; /* Color naranja */
+    color: #ffffff;
+    border: none;
+    padding: 12px; /* Menos padding */
+    border-radius: 5px;
+    font-size: 16px; /* Tamaño de fuente del botón */
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px; /* Ancho máximo del botón */
+    margin: 0 auto; /* Centrar el botón */
+    transition: background-color 0.3s ease;
+}
+
+.register-card button:hover {
+    background-color: #e59400;
+}
+/* Requisitos de contraseña */
+.password-requirements {
+    margin-top: 10px;
+    display: none; /* Oculto por defecto */
+}
+
+.password-requirements.active {
+    display: block; /* Mostrar cuando se activa */
+}
+
+.password-requirements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.password-requirements li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.password-requirements .requirement {
+    color: #999;
+}
+
+.password-requirements .requirement.valid {
+    color: #4CAF50; /* Verde para requisitos cumplidos */
+}
+
+.password-requirements .requirement.invalid {
+    color: #FF6347; /* Rojo para requisitos no cumplidos */
+}
+
+/* Estilos adicionales */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.terms-group {
+    margin-top: 15px;
+}
